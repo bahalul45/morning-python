@@ -1,9 +1,14 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, ScrollView, Text, View, ImageBackground, Image } from 'react-native';
+<<<<<<< HEAD
 import {PageHeader, PageTitle, Banner, BlogList, BlogPost, userPannel, Chat} from './components';
+=======
+import {PageHeader, PageTitle, Banner, BlogList, BlogPost, userPannel, Admin} from './components';
+>>>>>>> development
 
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { Admin } from './components/admin';
 
 
 
@@ -29,7 +34,8 @@ const TabNavigator = createBottomTabNavigator({
   Home: App,
   Post: BlogPost,
   User: userPannel,
-  Chat: Chat
+  Chat: Chat,
+  Admin: Admin
 }, { initialRouteName: 'Home'});
 
 export default createAppContainer(TabNavigator);
