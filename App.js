@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, ScrollView, Text, View, ImageBackground, Image } from 'react-native';
-import {PageHeader, PageTitle, Banner, BlogList, BlogPost, userPannel} from './components';
+import {PageHeader, PageTitle, Banner, BlogList, BlogPost, userPannel, Admin} from './components';
 
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
@@ -28,7 +28,8 @@ const App=()=> {
 const TabNavigator = createBottomTabNavigator({
   Home: App,
   Post: BlogPost,
-  User: userPannel
+  User: userPannel,
+  Admin: Admin
 }, { initialRouteName: 'Home'});
 
 export default createAppContainer(TabNavigator);
