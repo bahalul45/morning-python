@@ -1,14 +1,9 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, ScrollView, Text, View, ImageBackground, Image } from 'react-native';
-<<<<<<< HEAD
-import {PageHeader, PageTitle, Banner, BlogList, BlogPost, userPannel, Chat} from './components';
-=======
-import {PageHeader, PageTitle, Banner, BlogList, BlogPost, userPannel, Admin} from './components';
->>>>>>> development
+import {PageHeader, PageTitle, Banner, BlogList, BlogPost, userPannel, Chat, Admin} from './components';
 
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import { Admin } from './components/admin';
 
 
 
